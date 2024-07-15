@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Food Order</title>
+    <style>
+      .navbar {
+        display: flex;
+        position: sticky;
+        top: 0;
+        height: 50%;
+      }
+      .lists {
+        display: flex;
+        list-style-type: none;
+        margin-left: 20%;
+        position: relative;
+        top: 1rem;
+      }
+      .sohlc {
+        padding: 2rem;
+        margin-top: 0;
+      }
+      #fm {
+        position: relative;
+        top: 2.7rem;
+      }
+      .setimg {
+        display: flex;
+        gap: 1rem;
+      }
+      .categories {
+        list-style-type: none;
+      }
+      .All {
+        margin: 1.7rem;
+      }
+      .items {
+        width: 20rem;
+        border-radius: 0.5rem;
+      }
+      .dis {
+        font-size: 1.3rem;
+        color: rgb(180, 163, 141);
+      }
+      .delete {
+        position: relative;
+        top: 1.8rem;
+        left: 0.5rem;
+      }
+      .off {
+        position: relative;
+        top: -1.3rem;
+      }
+      .button {
+        position: relative;
+        top: -5rem;
+        left: 14rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        background-color: rgba(255, 255, 0, 0.479);
+      }
+      .last {
+        position: relative;
+        top: -2rem;
+        left: -5rem;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 1;
+      }
+      .category {
+        position: sticky;
+        top: 7rem;
+        z-index: 1;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="navbar">
+        <div style="position: relative; top: -2rem">
+          <img src="./img/fast food.jpeg" alt="" width="100%" height="100%" />
+        </div>
+        <div>
+          <span id="fm">FreshMenu</span>
+        </div>
+        <div class="lists">
+          <li class="sohlc">Search</li>
+          <li class="sohlc">Offers</li>
+          <li class="sohlc">Help center</li>
+          <li class="sohlc">Log In / Sign Up</li>
+          <li class="sohlc">Cart</li>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section>
+        <div class="setimg">
+          <div>
+            <img src="./img/img1.jpg" alt="" width="400rem" height="100%" />
+          </div>
+          <div>
+            <img
+              src="./img/img2 - Copy.jpg"
+              alt=""
+              width="400rem"
+              height="100%"
+            />
+          </div>
+          <div>
+            <img src="./img/img3.jpg" alt="" width="400rem" height="100%" />
+          </div>
+        </div>
+      </section>
+      <br /><br />
+      <div class="div">
+        <section class="category">
+          <div style="display: flex">
+            <div>
+              <h2>CATEGORIES</h2>
+            </div>
+            <div style="margin-left: 60%; margin-top: 1.5rem">
+              <button>VEG</button>
+            </div>
+            <div style="margin-top: 1.5rem; margin-left: 3rem">
+              <button>PRICE</button>
+            </div>
+            <div style="margin-top: 1.5rem; margin-left: 3rem">
+              <span>FILTERS</span>
+            </div>
+          </div>
+          <hr />
+        </section>
+        <section class="left-side">
+          <!-- <div style="display: flex;left: 0;position: sticky;"> -->
+            <div class="categories" style="position: sticky;top: 12rem;">
+              <li class="All">All day breakfast</li>
+              <li class="All">Omelette's</li>
+              <li class="All">Bowls</li>
+              <li class="All">Superbowls</li>
+              <li class="All">Noodles</li>
+              <li class="All">Keto and Salads</li>
+              <li class="All">Wraps</li>
+              <li class="All">Sandwiches</li>
+              <li class="All">Lite Bite</li>
+              <li class="All">Gourmet sandwiches</li>
+              <li class="All">Burgers</li>
+              <li class="All">Appetizers</li>
+              <li class="All">Desserts & Beverages</li>
+            </div>
+            <div style="position: relative;margin-left: 12rem;top:-35rem;">
+              <div>
+                <h1>ALL DAY BREAKFAST</h1>
+              </div>
+              <div style="display: flex">
+                <div style="margin: 1rem">
+                  <img src="./img/item1.JPG" alt="" class="items" /><br />
+                  <span class="dis">High Protein English Breakfast</span><br />
+                  <div style="display: flex">
+                    <h2>₹149</h2>
+                    <del class="delete"> ₹249</del>
+                  </div>
+                  <h3 class="off">40% OFF</h3>
+                  <button class="button">Pre-Order</button>
+                  <span class="last">Available from 7:25AM</span>
+                </div>
+                <div style="margin: 1rem">
+                  <img src="./img/item2.jpg" alt="" class="items" /><br />
+                  <span class="dis">Great Brit English Breakfast</span><br />
+                  <div style="display: flex">
+                    <h2>₹149</h2>
+                    <del class="delete"> ₹249</del>
+                  </div>
+                  <h3 class="off">40% OFF</h3>
+                  <button class="button">Pre-Order</button>
+                  <span class="last">Available from 7:30AM</span>
+                </div>
+                <div style="margin: 1rem">
+                  <img src="./img/item3.jpg" alt="" class="items" /><br />
+                  <span class="dis">Full English Breakfast</span><br />
+                  <div style="display: flex">
+                    <h2>₹149</h2>
+                    <del class="delete"> ₹229</del>
+                  </div>
+                  <h3 class="off">35% OFF</h3>
+                  <button class="button">Pre-Order</button>
+                  <span class="last">Available from 7:30AM</span>
+                </div>
+              </div>
+              <section>
+                <div style="display: flex">
+                  <div style="margin: 1rem">
+                    <img src="./img/item4.jpg" alt="" class="items" /><br />
+                    <span class="dis">Smoked Sausages with Hashbrown</span
+                    ><br />
+                    <div style="display: flex">
+                      <h2>₹149</h2>
+                      <del class="delete"> ₹249</del>
+                    </div>
+                    <h3 class="off">40% OFF</h3>
+                    <button class="button">Pre-Order</button>
+                    <span class="last">Available from 7:25AM</span>
+                  </div>
+                  <div style="margin: 1rem">
+                    <img src="./img/item5.jpeg" alt="" class="items" /><br />
+                    <span class="dis">The Muscle Multiplier</span><br />
+                    <div style="display: flex">
+                      <h2>₹149</h2>
+                      <del class="delete"> ₹199</del>
+                    </div>
+                    <h3 class="off">25% OFF</h3>
+                    <button class="button">Pre-Order</button>
+                    <span class="last">Available from 7:25AM</span>
+                  </div>
+                  <div style="margin: 1rem">
+                    <img src="./img/item6.jpg" alt="" class="items" /><br />
+                    <span class="dis">The V-King</span><br />
+                    <div style="display: flex">
+                      <h2>₹149</h2>
+                      <del class="delete"> ₹199</del>
+                    </div>
+                    <h3 class="off">25% OFF</h3>
+                    <button class="button">Pre-Order</button>
+                    <span class="last">Available from 7:25AM</span>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div style="display: flex">
+                  <div style="margin: 1rem">
+                    <img src="./img/item7.JPG" alt="" class="items" /><br />
+                    <span class="dis">Fresh Fruit Bowl</span><br />
+                    <div style="display: flex">
+                      <h2>₹149</h2>
+                      <del class="delete"> ₹150</del>
+                    </div>
+                    <h3 class="off">1% OFF</h3>
+                    <button class="button">Pre-Order</button>
+                    <span class="last">Available from 7:25AM</span>
+                  </div>
+                  <div style="margin: 1rem">
+                    <img src="./img/item8.jpeg" alt="" class="items" /><br />
+                    <span class="dis">The Sprinter</span><br />
+                    <div style="display: flex">
+                      <h2>₹149</h2>
+                      <del class="delete"> ₹199</del>
+                    </div>
+                    <h3 class="off">25% OFF</h3>
+                    <button class="button">Pre-Order</button>
+                    <span class="last">Available from 7:25AM</span>
+                  </div>
+                  <div style="margin: 1rem">
+                    <img src="./img/item9.jpeg" alt="" class="items" /><br />
+                    <span class="dis">Cheese French Toast Combo</span><br />
+                    <div style="display: flex">
+                      <h2>₹149</h2>
+                      <del class="delete"> ₹249</del>
+                    </div>
+                    <h3 class="off">40% OFF</h3>
+                    <button class="button">Pre-Order</button>
+                    <span class="last">Available from 7:25AM</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+          
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
